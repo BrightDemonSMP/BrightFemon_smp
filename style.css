@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: #0a0a0f;
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+  background: radial-gradient(circle at top, #14141f, #050508);
+}
+
+/* NEON TITLE */
+.neon-text {
+  font-size: clamp(2.5rem, 6vw, 3.8rem);
+  animation: neonGlow 6s infinite alternate;
+}
+
+@keyframes neonGlow {
+  0% { color:#00ff99; text-shadow:0 0 10px #00ff99; }
+  50% { color:#00ccff; text-shadow:0 0 20px #00ccff; }
+  100% { color:#b366ff; text-shadow:0 0 25px #b366ff; }
+}
+
+.tagline {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 26px;
+  border-radius: 30px;
+  background: linear-gradient(135deg,#00ff99,#00ccff,#b366ff);
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  box-shadow: 0 0 25px #00ccff;
+}
+
+/* IP CARDS */
+.ip-container {
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
+
+.ip-card {
+  background: #11111a;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.ip-card h3 {
+  margin-bottom: 10px;
+  color: #00ffcc;
+}
+
+.ip-card button {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #00ffcc;
+}
+
+/* CARDS */
+.card {
+  background: #12121a;
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+.rules li {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.status span {
+  color: #ffcc00;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.6;
+}
+
+/* ANIMATION */
+.fade-in {
+  animation: fadeInUp 1s ease both;
+}
+
+@keyframes fadeInUp {
+  from { opacity:0; transform:translateY(30px); }
+  to { opacity:1; transform:translateY(0); }
+}
