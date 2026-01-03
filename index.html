@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BrightDemon SMP</title>
+  <meta name="description" content="BrightDemon SMP is a Survival Minecraft server with upcoming mods, active development, and a growing community. Join now on Java or Bedrock." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <h1 class="neon-text">BrightDemon SMP</h1>
+    <p class="tagline">Survival Minecraft • Mods Coming Soon</p>
+
+    <div class="hero-buttons">
+      <a href="https://discord.gg/ZbKpJAj5N" target="_blank" class="btn">Join Discord</a>
+    </div>
+
+    <div class="ip-container">
+      <div class="ip-card">
+        <h3>Java Edition</h3>
+        <p id="java-ip">de2.freeminecrafthost.com:34544</p>
+        <button onclick="copyText('java-ip')">Copy IP</button>
+      </div>
+
+      <div class="ip-card">
+        <h3>Bedrock Edition</h3>
+        <p>Address: <span id="bedrock-ip">de2.freeminecrafthost.com</span></p>
+        <p>Port: <span id="bedrock-port">34544</span></p>
+        <button onclick="copyBedrock()">Copy Address</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section fade-in">
+    <h2>About BrightDemon SMP</h2>
+    <p>
+      BrightDemon SMP is a community-focused Survival Minecraft server designed
+      for players who enjoy a balanced, fair, and long-term survival experience.
+      We focus on stability, respectful gameplay, and carefully planned updates.
+    </p>
+    <p>
+      Mods are currently in development and will be introduced gradually to
+      enhance gameplay without breaking survival balance.
+    </p>
+  </section>
+
+  <!-- UPDATES -->
+  <section class="section fade-in">
+    <h2>Latest Updates</h2>
+
+    <div class="card">
+      <h3>Server Development Ongoing</h3>
+      <span class="date">Current</span>
+      <p>
+        The server is live and stable in Survival mode. Infrastructure work for
+        upcoming mod support is in progress.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Performance & Stability Improvements</h3>
+      <span class="date">Recent</span>
+      <p>
+        Server optimizations have been applied to improve TPS stability and
+        reduce lag during peak hours.
+      </p>
+    </div>
+  </section>
+
+  <!-- MODS -->
+  <section class="section fade-in">
+    <h2>Mods – Coming Soon</h2>
+    <p>
+      We are preparing a selection of quality-of-life and survival-enhancing
+      mods. All mods will be tested thoroughly before release to ensure fairness
+      and performance.
+    </p>
+    <p class="status">Status: <span>In Development</span></p>
+  </section>
+
+  <!-- RULES -->
+  <section class="section fade-in">
+    <h2>Server Rules</h2>
+    <ul class="rules">
+      <li>No cheating, hacking, or exploiting bugs</li>
+      <li>No griefing, stealing, or intentional disruption</li>
+      <li>Respect all players and staff members</li>
+      <li>Only approved mods or clients are allowed</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>BrightDemon SMP © 2026 • All Rights Reserved</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    function copyText(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text);
+      alert("IP copied to clipboard");
+    }
+
+    function copyBedrock() {
+      const text = "de2.freeminecrafthost.com:34544";
+      navigator.clipboard.writeText(text);
+      alert("Bedrock address copied");
+    }
+  </script>
+
+</body>
+    </html>
